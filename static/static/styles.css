@@ -1,0 +1,131 @@
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centered Container */
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Headers */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+select {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f6690;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Alternating row colors for better readability */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Center the text inside table cells */
+td {
+    text-align: center;
+}
+
+/* Pagination Controls */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 10px;
+}
+
+/* Limit Stats Table Width and Make it Scrollable */
+.stats-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+#statsTable {
+    width: 98%; /* Reduce width for better fit */
+    font-size: 16px; /* Reduce font size */
+    table-layout: fixed; /* Fixes column width issue */
+    word-wrap: break-word; /* Prevents text overflow */
+}
+
+/* Reduce Column Width */
+#statsTable th, #statsTable td {
+    padding: 8px;
+    max-width: 150px; /* Set max width for each column */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." for long text */
+    white-space: nowrap; /* Keeps text in a single line */
+}
+
+/* Enable Scrolling on Small Screens */
+@media screen and (max-width: 768px) {
+    #statsTable {
+        font-size: 12px; /* Further reduce font size for mobile */
+    }
+}
